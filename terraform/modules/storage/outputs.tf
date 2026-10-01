@@ -1,6 +1,6 @@
 output "bucket_id" {
   description = "Identifier of the generated bucket metadata resource."
-  value       = local_file.bucket_metadata.id
+  value       = module.storage.bucket_path
 }
 
 output "bucket_path" {
